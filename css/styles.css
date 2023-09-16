@@ -229,7 +229,10 @@ a {
 }
 
 .footer-container {
-  padding: 8rem 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   margin-left: 8.33333vw;
   display: flex;
   align-items: start;
@@ -246,7 +249,8 @@ a {
   font-weight: bold;
 }
 
-.first-section {
+.first-section,
+.second-section {
   display: flex;
   align-content: center;
   justify-content: flex-start;
@@ -254,7 +258,11 @@ a {
 }
 
 .first-section div {
-  padding: 5rem 9rem 5rem 0;
+  padding: 5rem 9rem 3rem 0;
+}
+
+.second-section div {
+  padding-right: 8.2rem;
 }
 
 .first-section div:last-child {
@@ -288,6 +296,9 @@ a {
 #one {
   display: flex;
   padding-top: 1rem;
+  width: 100%;
+  padding-right: 0;
+  height: 6.8rem;
 }
 
 .input-section {
@@ -297,6 +308,67 @@ a {
   justify-content: flex-end;
 }
 
-.input-div {
+.input-section input {
+  width: 75%;
+  border: none;
+  background-color: rgb(233, 233, 233);
+}
+
+.input-section button {
+  width: 25%;
+  background-color: rgb(72, 72, 255);
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.input-section input::placeholder {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.first-select {
+  width: 6rem;
+}
+
+.second-select {
   width: 10rem;
+}
+
+.first-select,
+.second-select {
+  height: 1.8rem;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.last-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 8.33333vw;
+  margin-right: 8.33333vw;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 10rem;
+}
+
+.last-div ul {
+  list-style-type: none;
+}
+
+.first-div ul,
+.second-div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-div li,
+.second-div li {
+  padding-right: 1rem;
 }
